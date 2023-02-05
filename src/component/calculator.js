@@ -11,8 +11,10 @@ const MycalCulator = () => {
     const[finalnum2,setfinalnum2]=useState("");
 
     const number_click=(e)=>{
-      
+      if(op=="")
       setnum1(num1+''+e.target.value);
+      else
+      setnum1(num2+''+e.target.value);
 
     }
 
