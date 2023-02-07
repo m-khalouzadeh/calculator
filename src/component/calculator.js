@@ -48,11 +48,16 @@ const MycalCulator = () => {
 
   }
 
+  const onAcClick=()=>{
+    setnum1("");
+    setnum2("");
+    setop("");
+  }
 
 
   return (
-    <div style={{ margin: "auto", width: "300px", marginTop: "50px" }}>
-      <span style={{border:"1px solid" , width: "126px"}}>
+    <div className="main_div">
+      <span style={{border:"1px solid", width: "222px", margin:" 5px", backgroundColor:"white"}}>
         <input className='myinput' value={num2}></input>
         
         <input className='myinput' value={num1}></input>
@@ -73,11 +78,12 @@ const MycalCulator = () => {
         <button className='mybtn' id="b7" value={7} onClick={onNumberClick}>7</button>
         <button className='mybtn' id="b8" value={8} onClick={onNumberClick}>8</button>
         <button className='mybtn' id="b9" value={9} onClick={onNumberClick}>9</button>
-        <button className='mybtn opbtn' id="mult" value={"*"} onClick={onOpClick}>*</button>
+        <button className='mybtn opbtn' id="mult" value={"*"} onClick={onOpClick}>x</button>
       </span>
       <span>
-        <button className='mybtn' id="b9" value={9} onClick={onNumberClick}>0</button>
-        <button className='btn_equal' id="eq" value={"="} onClick={equal_click}>=</button>
+      <button className='mybtn ac_btn' id="ac" value={"ac"} onClick={onAcClick}>AC</button>
+        <button className='mybtn' id="b0" value={0} onClick={onNumberClick}>0</button>
+        <button className=' mybtn btn_equal' id="eq" value={"="} onClick={equal_click}>=</button>
         <button className='mybtn opbtn' id="divide" value={"/"} onClick={onOpClick}>/</button>
 
       </span>
