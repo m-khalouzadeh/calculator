@@ -60,9 +60,11 @@ const MycalCulator = () => {
   return (
     <div>
       <div className="mybox">
-      <input className="myinput" value={num2}></input>
+        <div style={{display:"inline-grid" , border:"1px"}}>
+        <input className="myinput" value={num2}></input>
         <input className="myinput" value={num1}></input>
-        <br></br>
+        </div>
+        <br></br><bt></bt>
         <button className="mybtn" value={1} onClick={number_click}>1</button>
         <button className="mybtn" value={2} onClick={number_click}>2</button>
         <button className="mybtn" value={3} onClick={number_click}>3</button>
