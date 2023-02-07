@@ -1,29 +1,35 @@
+.myinput{
+    width: 125px;
+    margin-bottom: 10px;
+    display: block;
+    border: none;
 
-.mybox{
-    border-width: 2px;
-    border-color: cornflowerblue;
-    width: 200px;
-    height: 300px;
-    
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-    
-   
 }
 .mybtn{
-    width: 40px;
-    height: 40px;
-    background-color: rgb(176, 182, 192);
-    border-width: 1px;
-    margin: 3px;
-    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    margin: 4px;
+    
 
 }
 
-.myinput{
-    width: 120px;
-    height: 40px;
-     margin: 0;
-     border: none;
+.mybtn:hover{
+    color:rgb(0, 0, 0);
+   box-shadow: 2px 2px 2px gray;
+    
+
+}
+span{
+    display: block;
+    width: 300px;
+}
+
+.opbtn{
+    margin-left: 15px;
+    color: #2770bf;
+    width: 24px;
+}
+.btn_equal{
+    width: 55px;
+    margin-right: 3px;
+    margin-left: 4px;
 }
